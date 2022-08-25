@@ -20,7 +20,6 @@ let dogresult = document.querySelector('#dog_result');
 btnafficher.addEventListener('click', getRandomDog)
 
 function getRandomDog(){
-
 fetch('https://dog.ceo/api/breeds/image/random')
 .then(res=> res.json())
 .then(data => dogresult.style.backgroundImage = "url(" + data.message + ")"
