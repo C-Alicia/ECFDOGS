@@ -23,7 +23,7 @@ function getRandomDog(){
 
 fetch('https://dog.ceo/api/breeds/image/random')
 .then(res=> res.json())
-.then(data => dogresult.innerHTML = '<img src = ${data.message}"/>'
+.then(data => dogresult.style.backgroundImage = "url(" + data.message + ")"
 )
 
 }
